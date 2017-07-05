@@ -3,18 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <title>Toulouse Private Guide Trip</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
+<body class="body">
     <header class="header">
-        <nav>
-            nav
+        <nav class="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 nav__container">
+                        <div class="nav__logo">
+                            <div class="logo">
+                                <div class="logo__name">
+                                    <p class="name__text">
+                                        <span class="name__char">T</span>
+                                        <span class="name__char">A</span>
+                                        <span class="name__char">K</span>
+                                        <span class="name__char">A</span>
+                                        <span class="name__char">C</span>
+                                        <span class="name__char">H</span>
+                                        <span class="name__char">E</span>
+                                    </p>
+                                </div>
+                                <div class="logo__desc">
+                                    <p class="desc__text">
+                                        Private Tours Toulouse
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav__menu">
+                            <div class="menu">
+                                <div class="menu__item">
+                                    <p class="menu__text">
+                                        Home
+                                    </p>
+                                </div>
+                                <div class="menu__item">
+                                    <p class="menu__text">
+                                        About
+                                    </p>
+                                </div>
+                                <div class="menu__item">
+                                    <p class="menu__text">
+                                        Tours
+                                    </p>
+                                </div>
+                                <div class="menu__item">
+                                    <p class="menu__text">
+                                        Contact
+                                    </p>
+                                </div>
+                                <div class="menu__item menu__item--lang">
+                                    <p class="menu__text menu__text--lang">
+                                        <span class="menu__lang">
+                                            En
+                                        </span>
+                                        <span class="menu__arrow">
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="main">
-        <div class="">main</div>
+        <section class="slider">
+            <div class="">
+                <div class="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="slider__intro">
+                                    <div class="intro">
+                                        <div class="intro__info">
+                                            <h1 class="intro__heading">
+                                                Lorem ipsum dolor
+                                            </h1>
+                                            <p class="intro__text">
+                                                Consequuntur dignissimos in itaque laudantium soluta!
+                                            </p>
+                                            <p class="intro__desc">
+                                                A ad atque dolores esse ipsa laudantium? Deleniti eligendi harum illo ipsa perferendis quod voluptatum!
+                                            </p>
+                                        </div>
+                                        <div class="intro__arrow">
+                                            <div class="arrow">
+                                                <p class="arrow__text">
+                                                    See more
+                                                </p>
+                                                <div class="arrow__bottom">
+                                                    <img src="./img/arrow_bottom.png" alt="" class="arrow__img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="about__heading">
+                            <h2 class="heading">
+                                About
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-10 offset-1">
+                        <div class="about__desc">
+                            <p class="desc">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis corporis cumque distinctio doloremque doloribus ea eius, fuga fugit hic magni nemo neque non optio quia tempora tenetur vel voluptate?</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tours">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tours__heading">
+                            <h2 class="heading">
+                                Tours
+                            </h2>
+                        </div>
+                        <div class="tours__all">
+                            <a href="#" class="all">
+                                See all tours
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="tours__slider">
+                            <div class="slide" style="background-image: url('./img/img01.jpg');">
+                                <div class="slide__desc">
+                                    <div class="slide__heading">
+                                        <h3 class="subheading">Basilique Saint-Sernin</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide" style="background-image: url('./img/img02.png');">
+                                <div class="slide__desc">
+                                    <div class="slide__heading">
+                                        <h3 class="subheading">Capitole</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide" style="background-image: url('./img/img03.jpg');">
+                                <div class="slide__desc">
+                                    <div class="slide__heading">
+                                        <h3 class="subheading">Jacobins</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide" style="background-image: url('./img/img04.jpg');">
+                                <div class="slide__desc">
+                                    <div class="slide__heading">
+                                        <h3 class="subheading">Rue de Taur</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide" style="background-image: url('./img/img05.jpg');">
+                                <div class="slide__desc">
+                                    <div class="slide__heading">
+                                        <h3 class="subheading">Dome de la Grave</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tours__arrows">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
-        <div class="">footer</div>
+        <div class="">TAKACHE</div>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

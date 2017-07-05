@@ -4,9 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass -o css sass",
+    "autoprefixer": "autoprefixer-cli -o css/index.css css/index.css",
+    "css": "npm run sass && npm run autoprefixer",
+    "watch:css": "onchange \"sass/**/*\" -- npm run css",
+    "start": "parallelshell \"npm run watch:css\" \"npm run serve\"",
+    "serve": "browser-sync start --server --files \"css/*.css\" \"*.html\" \"js/*.js\" \"fonts/**/*\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.18.11",
+    "node-sass": "^3.13.0",
+    "onchange": "^3.0.2",
+    "parallelshell": "^2.0.0"
+  }
 }

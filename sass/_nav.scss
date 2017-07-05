@@ -1,0 +1,123 @@
+.nav{
+  background-color: rgba($nav-bg,.7);
+  color: $nav-col;
+  margin-bottom: -48px;
+  position: relative;
+  z-index: 2;
+  &__container{
+    align-items: center;
+    display: flex;
+  }
+  &__logo{
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  &__menu{
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .logo{
+    padding: 14px 0 7px;
+    &__name{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    .name__text{
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 14px;
+      word-spacing: normal;
+    }
+    .name__char{
+      display: inline-block;
+      position: relative;
+      &:after{
+        border-right: 1px solid $nav-col;
+        bottom: 1px;
+        content: '';
+        display: block;
+        height: 0;
+        margin: 0 0px 0 0px;
+        position: absolute;
+        right: -2.5px;
+        width: 0;
+      }
+      &:nth-child(1){
+        &:after{
+          height:16px;
+        }
+      }
+      &:nth-child(2){
+        &:after{
+          height:18px;
+        }
+      }
+      &:nth-child(3){
+        &:after{
+          height:14px;
+        }
+      }
+      &:nth-child(4){
+        &:after{
+          height:22px;
+        }
+      }
+      &:nth-child(5){
+        &:after{
+          height:16px;
+        }
+      }
+      &:nth-child(6){
+        &:after{
+          height:14px;
+        }
+      }
+      &:nth-child(7){
+        &:after{
+          display: none;
+        }
+      }
+    }
+    .desc__text{
+      font-size: 9px;
+      font-weight: 300;
+    }
+  }
+  .menu{
+    display:flex;
+    justify-content: flex-end;
+    &__item{
+      box-sizing: border-box;
+      padding: 5px 15px;
+    }
+
+    &__text{
+      font-size: 14px;
+      font-weight: 300;
+    }
+    &__text--lang{
+      align-self: center;
+      display: flex;
+    }
+    &__lang{
+      align-self: center;
+      display: inline-block;
+      padding: 0 8px;
+    }
+    &__arrow{
+      position: relative;
+      &:after{
+        border-bottom: 1px solid $nav-col;
+        border-right: 1px solid $nav-col;
+        bottom: 50%;
+        content: '';
+        display: block;
+        height: 7px;
+        position: absolute;
+        transform: translateY(0) rotate(45deg);
+        width: 7px;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.tours{
+  background-color: $tours-bg;
+  @extend %fw300;
+  padding: 80px 0;
+  &__heading{
+    @extend %prelative;
+    @extend %tac;
+    margin-bottom: 30px;
+    :after{
+      @extend %hborder-bottom;
+    }
+  }
+  &__all{
+    padding: 20px 0 10px;
+    text-align: center;
+  }
+  .all{
+    color: inherit;
+    font-size: 14px;
+    font-weight: 300;
+    &:hover{
+      text-decoration: underline;
+      font-weight: 400;
+    }
+  }
+  &__slider{
+    @extend %prelative;
+  }
+  &__arrows{
+
+  }
+  .arrow{
+    align-items: center;
+    background-color: $tours-col;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 20px;
+    font-weight: 400;
+    height: 30px;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-15px);
+    width: 30px;
+  }
+  .arrow--next{
+    right: -30px;
+  }
+  .arrow--prev{
+    left: -30px;
+  }
+  .heading{
+    @extend %fs36;
+    @extend %fw300;
+    @extend %m0;
+  }
+  .slide{
+    align-items: flex-end;
+    background-size: cover;
+    display: flex;
+    margin: 15px;
+    min-height: 250px;
+    &__desc{
+      flex-grow: 1;
+    }
+    &__heading{
+      background-color: rgba($black, 0.6);
+      border-bottom: 2px solid $raspberry;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  .subheading{
+    color: $tours-col;
+    @extend %fw300;
+    @extend %m0;
+    font-size: 20px;
+  }
+}
