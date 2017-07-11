@@ -1,4 +1,114 @@
 .footer{
   background-color: $footer-bg;
   color: $footer-col;
+  padding: 30px 0;
+  &__box{
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo{
+    display: inline-flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  &__menu{
+    font-size: 14px;
+  }
+  .logo{
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    padding: 14px 0 7px;
+    &:hover {
+      text-decoration: none;
+    }
+    &__name{
+      align-items: center;
+      display: inline-flex;
+      justify-content: center;
+    }
+    .name__text{
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 14px;
+      word-spacing: normal;
+    }
+    .name__char{
+      display: inline-block;
+      position: relative;
+      &:after{
+        border-right: 1px solid $footer-col;
+        bottom: 1px;
+        content: '';
+        display: block;
+        height: 0;
+        margin: 0 0px 0 0px;
+        position: absolute;
+        right: -2.5px;
+        width: 0;
+      }
+      &:nth-child(1){
+        &:after{
+          height:16px;
+        }
+      }
+      &:nth-child(2){
+        &:after{
+          height:18px;
+        }
+      }
+      &:nth-child(3){
+        &:after{
+          height:14px;
+        }
+      }
+      &:nth-child(4){
+        &:after{
+          height:22px;
+        }
+      }
+      &:nth-child(5){
+        &:after{
+          height:16px;
+        }
+      }
+      &:nth-child(6){
+        &:after{
+          height:14px;
+        }
+      }
+      &:nth-child(7){
+        &:after{
+          display: none;
+        }
+      }
+    }
+    .desc__text{
+      font-size: 9px;
+      font-weight: 400;
+    }
+  }
+  .desc{
+    font-size: 12px;
+    max-width: 500px;
+  }
+  .menu{
+    &__name{
+      color: inherit;
+      display: block;
+      outline: none;
+      &:link, &:visited, &:hover, &:active {
+        text-decoration: none;
+      }
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
 }

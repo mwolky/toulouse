@@ -12,6 +12,21 @@
   &__desc{
     text-align: center;
   }
+  &__person{
+    display: flex;
+    padding-top: 40px;
+  }
+  &__photo{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 15px;
+    width: 50%;
+  }
+  &__intro{
+    width: 50%;
+    padding: 0 15px;
+  }
   .heading{
     font-size: 36px;
     font-weight: 300;
@@ -20,5 +35,16 @@
   .desc{
     font-size: 16px;
     font-weight: 300;
+  }
+  .photo{
+    background-color: #00aa88;
+    height: 200px;
+    width: 300px;
+
+  }
+  .intro{
+    @extend %m0;
+    @extend %fw300;
+    max-width: 300px;
   }
 }

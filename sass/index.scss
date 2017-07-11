@@ -1,9 +1,11 @@
 @import './bootstrap-4.0.0-alpha.6/scss/bootstrap';
+@import 'slick';
 
 @import 'fonts';
 @import 'colors';
 @import 'mixins';
 @import 'placeholders';
+@import 'keyframes';
 
 @import 'general';
 @import 'header';
@@ -11,5 +13,6 @@
 @import 'slider';
 @import 'about';
 @import 'tours';
+@import 'contact';
 @import 'footer';
 

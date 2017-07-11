@@ -11,20 +11,27 @@
     }
   }
   &__all{
-    padding: 20px 0 10px;
+    padding: 40px 0 0;
     text-align: center;
   }
   .all{
-    color: inherit;
-    font-size: 14px;
-    font-weight: 300;
+    background-color: $tours-br;
+    color: $white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 40px;
+    transition: all .2s;
     &:hover{
-      text-decoration: underline;
-      font-weight: 400;
+      color: $white;
+      background-color: rgba($tours-br,.85);
+      text-decoration: none;
     }
   }
   &__slider{
     @extend %prelative;
+    margin: auto;
+    max-width: 1600px;
+    padding: 0 60px;
   }
   &__arrows{
 
@@ -37,18 +44,31 @@
     display: inline-flex;
     font-size: 20px;
     font-weight: 400;
-    height: 30px;
+    height: 40px;
     justify-content: center;
     position: absolute;
     top: 50%;
     transform: translateY(-15px);
-    width: 30px;
+    width: 40px;
+    .chevron:before{
+      font-family: 'FontAwesome';
+      position: relative;
+      top: 1px;
+    }
   }
   .arrow--next{
-    right: -30px;
+    right: 20px;
+    .chevron:before{
+      left: 1px;
+      content: '\f054';
+    }
   }
   .arrow--prev{
-    left: -30px;
+    left: 20px;
+    .chevron:before{
+      left: -1px;
+      content: '\f053';
+    }
   }
   .heading{
     @extend %fs36;
@@ -61,15 +81,59 @@
     display: flex;
     margin: 15px;
     min-height: 250px;
+    &:hover{
+      .slide__details{
+        max-height: 300px;
+      }
+    }
     &__desc{
+      background-color: rgba($black, 0.6);
+      border-bottom: 2px solid $tours-br;
       flex-grow: 1;
     }
     &__heading{
-      background-color: rgba($black, 0.6);
-      border-bottom: 2px solid $raspberry;
       text-align: center;
       padding: 10px 0;
     }
+    &__details{
+      max-height: 0;
+      overflow: hidden;
+      transition: all 1s ease-out;
+    }
+  }
+  .details{
+    &__price{
+      color: $white;
+      &:before{
+        content: '\f07a';
+        display: inline-block;
+        font-family: 'FontAwesome';
+        margin-right: 10px;
+      }
+    }
+    &__time{
+      color: $white;
+      &:before{
+        content: '\f017';
+        display: inline-block;
+        font-family: 'FontAwesome';
+        margin-right: 10px;
+      }
+    }
+    &__cond{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+    }
+    &__more{
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 15px;
+    }
+  }
+  .more{
+    color: $white;
+    font-size: 12px;
   }
   .subheading{
     color: $tours-col;

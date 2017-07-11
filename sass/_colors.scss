@@ -1,23 +1,15 @@
-$raspberry:#da0050;
-
-$lemon:#fef035;
-$gold:rgb(255,215,0);
-$goldenrod:rgb(218,165,32);
-
-$orange:rgb(255,165,0);
-$darkorange:rgb(255,140,0);
-$orangered: rgb(255,69,0);
-
-$lazurblue:rgb(9,180,237);
+$raspberry: rgb(171,39,79);
 
 $blacklight: rgb(48,42,61);
 $black:rgb(0,0,0);
 $white: rgb(255,255,255);
 
 $greylight: rgb(241,241,241);
+$greydark: rgb(37,37,37);
 
 $nav-col: $white;
-$nav-bg: $black;
+$nav-col-fixed: $greydark;
+$nav-bg: $white;
 $nav-br-b: $raspberry;
 
 $about-col: $blacklight;
@@ -27,7 +19,12 @@ $slider-col: $white;
 $slider-br: $raspberry;
 
 $tours-bg: $greylight;
+$tours-br: $raspberry;
 $tours-col: $white;
 
-$footer-bg: $black;
+$contact-bg: $greylight;
+$contact-br: $raspberry;
+$contact-col: $greydark;
+
+$footer-bg: $raspberry;
 $footer-col: $white;

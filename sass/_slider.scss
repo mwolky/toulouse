@@ -2,12 +2,12 @@
   background-image: url('../img/bg01.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 4px solid $slider-br;
-  min-height: calc(100vh - 51px);
+  border-bottom: 5px solid $slider-br;
+  box-sizing: border-box;
+  min-height: 100vh;
   &__intro{
     display: flex;
-    height: calc(100vh - 51px);
-    margin-top: 48px;
+    height: 100vh;
   }
   .intro{
     color: $slider-col;
@@ -26,6 +26,7 @@
         width: 100px;
       }
     }
+
     &__text{
       font-size: 24px;
       font-weight: 700;
@@ -58,6 +59,15 @@
     }
     &__bottom{
       position: relative;
+      display: block;
+      animation-name: arrow_goes_down;
+      animation-duration: 1.5s;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    &__img{
+
     }
   }
 }

@@ -1,0 +1,81 @@
+.contact{
+  &__bg{
+    background-attachment: fixed;
+    background-image: url('../img/bg04.jpg');
+    background-size: cover;
+    height: 200px;
+  }
+  &__info{
+    color: $contact-col;
+    @extend %fw300;
+    @extend %sectionp;
+  }
+  &__details{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+  }
+  &__heading{
+    @extend %prelative;
+    @extend %tac;
+    margin-bottom: 30px;
+    :after{
+      @extend %hborder-bottom;
+      border-color: $contact-br;
+    }
+  }
+  &__desc{
+    @extend %tac;
+  }
+  &__phone{
+    @extend %tac;
+    width: 200px;
+    &:before{
+      content: '\f095';
+      font-family: FontAwesome;
+      font-size: 40px;
+    }
+  }
+  &__place{
+    @extend %tac;
+    width: 200px;
+    &:before{
+      content: '\f041';
+      font-family: FontAwesome;
+      font-size: 40px;
+    }
+  }
+  &__mail{
+    @extend %tac;
+    width: 200px;
+    &:before{
+      content: '\f003';
+      font-family: FontAwesome;
+      font-size: 40px;
+    }
+  }
+  .heading{
+    @extend %fs36;
+    @extend %fw300;
+    @extend %m0;
+  }
+  .desc{
+    @extend %m0;
+    display: inline-block;
+    padding: 0 10% 40px;
+  }
+  .phone{
+    @extend %m0;
+  }
+  .place{
+    @extend %m0;
+  }
+  .mail{
+    @extend %m0;
+    color: inherit;
+    outline: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}

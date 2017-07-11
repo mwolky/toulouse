@@ -11,7 +11,7 @@
   font-size: 36px;
 }
 %hborder-bottom{
-  border-bottom: 2px solid $about-br;
+  border-bottom: 3px solid $about-br;
   bottom: 0px;
   content: '';
   display: block;
@@ -22,4 +22,7 @@
 }
 %prelative{
   position: relative;
+}
+%sectionp{
+  padding: 80px 0;
 }

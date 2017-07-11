@@ -1,3 +1,21 @@
 .header{
+  margin-bottom: -55px;
   position: relative;
+  &--fixed{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    .nav{
+      background-color: rgba($nav-bg,1);
+      color: $nav-col-fixed !important;
+    }
+    .name__char:after {
+      border-right: 1px solid $nav-col-fixed !important;
+    }
+    .menu__lang--active:after{
+      border-color: $nav-col-fixed !important;
+    }
+  }
+
 }

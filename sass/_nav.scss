@@ -1,8 +1,8 @@
 .nav{
-  background-color: rgba($nav-bg,.7);
+  background-color: rgba($nav-bg,0);
   color: $nav-col;
-  margin-bottom: -48px;
   position: relative;
+  transition: all .5s;
   z-index: 2;
   &__container{
     align-items: center;
@@ -17,16 +17,22 @@
     flex-shrink: 0;
   }
   .logo{
+    color: inherit;
+    display: block;
+    outline: none;
     padding: 14px 0 7px;
+    &:link, &:visited, &:hover, &:active {
+      text-decoration: none;
+    }
     &__name{
       align-items: center;
       display: flex;
       justify-content: center;
     }
     .name__text{
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 700;
-      line-height: 14px;
+      line-height: 16px;
       word-spacing: normal;
     }
     .name__char{
@@ -41,6 +47,7 @@
         margin: 0 0px 0 0px;
         position: absolute;
         right: -2.5px;
+        transition: all .5s;
         width: 0;
       }
       &:nth-child(1){
@@ -80,21 +87,41 @@
       }
     }
     .desc__text{
-      font-size: 9px;
-      font-weight: 300;
+      font-size: 10px;
+      font-weight: 400;
     }
   }
-  .menu{
-    display:flex;
+  .menu {
+    display: flex;
     justify-content: flex-end;
+    &__items{
+      position: relative;
+      display: flex;
+
+    }
+    &__underline{
+      border-bottom: 2px solid $nav-br-b;
+      bottom: 6px;
+      height: 0;
+      left: 15px;
+      position: absolute;
+      transition: all .5s;
+      width: 38px;
+    }
     &__item{
       box-sizing: border-box;
       padding: 5px 15px;
     }
 
     &__text{
+      color: inherit;
+      display: block;
       font-size: 14px;
-      font-weight: 300;
+      font-weight: 700;
+      outline: none;
+      &:link, &:visited, &:hover, &:active {
+        text-decoration: none;
+      }
     }
     &__text--lang{
       align-self: center;
@@ -102,22 +129,28 @@
     }
     &__lang{
       align-self: center;
+      color: inherit;
       display: inline-block;
-      padding: 0 8px;
-    }
-    &__arrow{
-      position: relative;
-      &:after{
-        border-bottom: 1px solid $nav-col;
-        border-right: 1px solid $nav-col;
-        bottom: 50%;
-        content: '';
-        display: block;
-        height: 7px;
-        position: absolute;
-        transform: translateY(0) rotate(45deg);
-        width: 7px;
+      padding: 0 5px;
+      &:link, &:visited, &:hover, &:active {
+        text-decoration: none;
       }
     }
+    &__lang--active{
+      @extend %prelative;
+      &:after{
+        border-bottom: 2px solid $nav-col;
+        bottom: 1px;
+        box-sizing: content-box;
+        content: '';
+        display: block;
+        height: 0;
+        left: 5px;
+        position: absolute;
+        transition: all .5s;
+        width: calc(100% - 10px);
+      }
+    }
+
   }
 }
